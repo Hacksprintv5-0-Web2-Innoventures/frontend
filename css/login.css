@@ -1,12 +1,12 @@
 /* Google Font Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-body{
+body {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -14,16 +14,16 @@ body{
   background: #7d2ae8;
   padding: 30px;
 }
-.container{
+.container {
   position: relative;
   max-width: 850px;
   width: 100%;
   background: #fff;
   padding: 40px 30px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   perspective: 2700px;
 }
-.container .cover{
+.container .cover {
   position: absolute;
   top: 0;
   left: 50%;
@@ -34,24 +34,24 @@ body{
   transform-origin: left;
   transform-style: preserve-3d;
 }
-.container #flip:checked ~ .cover{
+.container #flip:checked ~ .cover {
   transform: rotateY(-180deg);
 }
- .container .cover .front,
- .container .cover .back{
+.container .cover .front,
+.container .cover .back {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
-.cover .back{
+.cover .back {
   transform: rotateY(180deg);
   backface-visibility: hidden;
 }
 .container .cover::before,
-.container .cover::after{
-  content: '';
+.container .cover::after {
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -59,19 +59,19 @@ body{
   opacity: 0.5;
   z-index: 12;
 }
-.container .cover::after{
+.container .cover::after {
   opacity: 0.3;
   transform: rotateY(180deg);
   backface-visibility: hidden;
 }
-.container .cover img{
+.container .cover img {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: 10;
 }
-.container .cover .text{
+.container .cover .text {
   position: absolute;
   z-index: 130;
   height: 100%;
@@ -82,38 +82,38 @@ body{
   justify-content: center;
 }
 .cover .text .text-1,
-.cover .text .text-2{
+.cover .text .text-2 {
   font-size: 26px;
   font-weight: 600;
   color: #fff;
   text-align: center;
 }
-.cover .text .text-2{
+.cover .text .text-2 {
   font-size: 15px;
   font-weight: 500;
 }
-.container .forms{
+.container .forms {
   height: 100%;
   width: 100%;
   background: #fff;
 }
-.container .form-content{
+.container .form-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .form-content .login-form,
-.form-content .signup-form{
+.form-content .signup-form {
   width: calc(100% / 2 - 25px);
 }
-.forms .form-content .title{
+.forms .form-content .title {
   position: relative;
   font-size: 24px;
   font-weight: 500;
   color: #333;
 }
-.forms .form-content .title:before{
-  content: '';
+.forms .form-content .title:before {
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -121,13 +121,13 @@ body{
   width: 25px;
   background: #7d2ae8;
 }
-.forms .signup-form  .title:before{
+.forms .signup-form .title:before {
   width: 20px;
 }
-.forms .form-content .input-boxes{
+.forms .form-content .input-boxes {
   margin-top: 30px;
 }
-.forms .form-content .input-box{
+.forms .form-content .input-box {
   display: flex;
   align-items: center;
   height: 50px;
@@ -135,7 +135,7 @@ body{
   margin: 10px 0;
   position: relative;
 }
-.form-content .input-box input{
+.form-content .input-box input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -143,34 +143,34 @@ body{
   padding: 0 30px;
   font-size: 16px;
   font-weight: 500;
-  border-bottom: 2px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 .form-content .input-box input:focus,
-.form-content .input-box input:valid{
+.form-content .input-box input:valid {
   border-color: #7d2ae8;
 }
-.form-content .input-box i{
+.form-content .input-box i {
   position: absolute;
   color: #7d2ae8;
   font-size: 17px;
 }
-.forms .form-content .text{
+.forms .form-content .text {
   font-size: 14px;
   font-weight: 500;
   color: #333;
 }
-.forms .form-content .text a{
+.forms .form-content .text a {
   text-decoration: none;
 }
-.forms .form-content .text a:hover{
+.forms .form-content .text a:hover {
   text-decoration: underline;
 }
-.forms .form-content .button{
+.forms .form-content .button {
   color: #fff;
   margin-top: 40px;
 }
-.forms .form-content .button input{
+.forms .form-content .button input {
   color: #fff;
   background: #7d2ae8;
   border-radius: 6px;
@@ -178,45 +178,46 @@ body{
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.forms .form-content .button input:hover{
+.forms .form-content .button input:hover {
   background: #5b13b9;
 }
-.forms .form-content label{
+.forms .form-content label {
   color: #5b13b9;
   cursor: pointer;
 }
-.forms .form-content label:hover{
+.forms .form-content label:hover {
   text-decoration: underline;
 }
 .forms .form-content .login-text,
-.forms .form-content .sign-up-text{
+.forms .form-content .sign-up-text {
   text-align: center;
   margin-top: 25px;
 }
-.container #flip{
+.container #flip {
   display: none;
 }
 @media (max-width: 730px) {
-  .container .cover{
+  .container .cover {
     display: none;
   }
   .form-content .login-form,
-  .form-content .signup-form{
+  .form-content .signup-form {
     width: 100%;
   }
-  .form-content .signup-form{
+  .form-content .signup-form {
     display: none;
   }
-  .container #flip:checked ~ .forms .signup-form{
+  .container #flip:checked ~ .forms .signup-form {
     display: block;
   }
-  .container #flip:checked ~ .forms .login-form{
+  .container #flip:checked ~ .forms .login-form {
     display: none;
   }
 }
 #navbar {
-  background:#46c2f7;
-  font-family: 'Poppins';
+  background: #46c2f7;
+  opacity: 0;
+  font-family: "Poppins";
   color: rgb(13, 26, 38);
   position: fixed;
   padding-bottom: 60px;
@@ -231,16 +232,17 @@ body{
   margin: auto;
   text-align: center;
   width: 70%;
-} @media(max-width: 768px) {
-    .nav-wrapper {
-      width: 90%;
-    }
-  } @media(max-width: 638px) {
-      .nav-wrapper {
-        width: 100%;
-      }
-    } 
-
+}
+@media (max-width: 768px) {
+  .nav-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 638px) {
+  .nav-wrapper {
+    width: 100%;
+  }
+}
 
 .logo {
   float: left;
@@ -250,11 +252,12 @@ body{
   height: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
-} @media(max-width: 768px) {
-    .logo {
-/*       margin-left: 5px; */
-    }
+}
+@media (max-width: 768px) {
+  .logo {
+    /*       margin-left: 5px; */
   }
+}
 
 #navbar ul {
   display: inline-block;
@@ -265,15 +268,17 @@ body{
   text-align: right;
   transition: transform 0.5s ease-out;
   -webkit-transition: transform 0.5s ease-out;
-} @media(max-width: 640px) {
-    #navbar ul {
-      display: none;
-    }
-  } @media(orientation: landscape) {
-      #navbar ul {
-        display: inline-block;
-      }
-    }
+}
+@media (max-width: 640px) {
+  #navbar ul {
+    display: none;
+  }
+}
+@media (orientation: landscape) {
+  #navbar ul {
+    display: inline-block;
+  }
+}
 
 #navbar li {
   display: inline-block;
@@ -283,7 +288,7 @@ body{
   color: rgb(13, 26, 38);
   display: block;
   font-size: 15px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   height: 50px;
   letter-spacing: 1px;
   margin: 0 20px;
@@ -303,8 +308,9 @@ body{
 }
 
 /* Animated Bottom Line */
-#navbar li a:before, #navbar li a:after {
-  content: '';
+#navbar li a:before,
+#navbar li a:after {
+  content: "";
   position: absolute;
   width: 0%;
   height: 1px;
@@ -334,7 +340,7 @@ body{
   width: 100%;
   /* transition: 0s; */
 }
-@media(max-width: 640px) {
+@media (max-width: 640px) {
   .menuIcon {
     cursor: pointer;
     display: block;
@@ -356,17 +362,17 @@ body{
     width: 20px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-  } 
+  }
 
   .icon-bars::before {
     background: rgb(13, 26, 38);
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: -8px;
     height: 2px;
     width: 20px;
-/*     -webkit-transition: top 0.2s ease 0.3s;
+    /*     -webkit-transition: top 0.2s ease 0.3s;
     transition: top 0.2s ease 0.3s; */
     -webkit-transition: 0.3s width 0.4s;
     transition: 0.3s width 0.4s;
@@ -375,13 +381,13 @@ body{
   .icon-bars::after {
     margin-top: 0px;
     background: rgb(13, 26, 38);
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: -8px;
     height: 2px;
     width: 20px;
-/*     -webkit-transition: top 0.2s ease 0.3s;
+    /*     -webkit-transition: top 0.2s ease 0.3s;
     transition: top 0.2s ease 0.3s; */
     -webkit-transition: 0.3s width 0.4s;
     transition: 0.3s width 0.4s;
@@ -394,15 +400,29 @@ body{
     width: 20px;
     animation: middleBar 3s infinite 0.5s;
     -webkit-animation: middleBar 3s infinite 0.5s;
-  } @keyframes middleBar {
-      0% {width: 0px}
-      50% {width: 20px}
-      100% {width: 0px}
-    } @-webkit-keyframes middleBar {
-        0% {width: 0px}
-        50% {width: 20px}
-        100% {width: 0px}
-      }
+  }
+  @keyframes middleBar {
+    0% {
+      width: 0px;
+    }
+    50% {
+      width: 20px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  @-webkit-keyframes middleBar {
+    0% {
+      width: 0px;
+    }
+    50% {
+      width: 20px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
 
   .icon-bars.overlay::before {
     background: rgb(97, 114, 129);
@@ -410,15 +430,29 @@ body{
     width: 10px;
     animation: topBar 3s infinite 0.2s;
     -webkit-animation: topBar 3s infinite 0s;
-  } @keyframes topBar {
-      0% {width: 0px}
-      50% {width: 10px}
-      100% {width: 0px}
-    } @-webkit-keyframes topBar {
-        0% {width: 0px}
-        50% {width: 10px}
-        100% {width: 0px}
-      }
+  }
+  @keyframes topBar {
+    0% {
+      width: 0px;
+    }
+    50% {
+      width: 10px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  @-webkit-keyframes topBar {
+    0% {
+      width: 0px;
+    }
+    50% {
+      width: 10px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
 
   .icon-bars.overlay::after {
     background: rgb(97, 114, 129);
@@ -426,16 +460,29 @@ body{
     width: 15px;
     animation: bottomBar 3s infinite 1s;
     -webkit-animation: bottomBar 3s infinite 1s;
-  } @keyframes bottomBar {
-      0% {width: 0px}
-      50% {width: 15px}
-      100% {width: 0px}
-    } @-webkit-keyframes bottomBar {
-        0% {width: 0px}
-        50% {width: 15px}
-        100% {width: 0px}
-      }
-
+  }
+  @keyframes bottomBar {
+    0% {
+      width: 0px;
+    }
+    50% {
+      width: 15px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  @-webkit-keyframes bottomBar {
+    0% {
+      width: 0px;
+    }
+    50% {
+      width: 15px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
 
   /* Toggle Menu Icon */
   .menuIcon.toggle .icon-bars {
@@ -466,7 +513,6 @@ body{
   }
 }
 
-
 /*======================================================
                    Responsive Mobile Menu 
   ======================================================*/
@@ -487,7 +533,8 @@ body{
   transition: transform 0.2s ease-out;
 }
 
-.overlay-menu ul, .overlay-menu li {
+.overlay-menu ul,
+.overlay-menu li {
   display: block;
   position: relative;
 }
@@ -496,13 +543,13 @@ body{
   display: block;
   font-size: 1.8em;
   letter-spacing: 4px;
-/*   opacity: 0; */
+  /*   opacity: 0; */
   padding: 10px 0;
   text-align: right;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-/*   -webkit-transition: 0.2s opacity 0.2s ease-out;
+  /*   -webkit-transition: 0.2s opacity 0.2s ease-out;
   transition: 0.2s opacity 0.2s ease-out; */
 }
 
